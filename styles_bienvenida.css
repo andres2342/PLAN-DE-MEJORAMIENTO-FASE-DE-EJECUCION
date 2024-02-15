@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+    position: relative; /* Establecer posición relativa para el cuerpo */
+    min-height: 100vh; /* Establecer altura mínima del cuerpo para que cubra toda la ventana del navegador */
+}
+
+/* Estilos para la imagen de fondo */
+body::after {
+    content: "";
+    background-image: url('img/imagen\ 1.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Cubrir todo el espacio disponible */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    position: absolute; /* Posicionar la imagen de fondo */
+    top: 0; /* Pegar la imagen de fondo en la parte superior */
+    left: 0; /* Pegar la imagen de fondo en la parte izquierda */
+    right: 0; /* Pegar la imagen de fondo en la parte derecha */
+    bottom: 0; /* Pegar la imagen de fondo en la parte inferior */
+    z-index: -1; /* Colocar la imagen de fondo detrás del contenido */
+}
+
+
+
+.header {
+    background-color: #e17108e6; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto del encabezado */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interior */
+    position: fixed; /* Fijar la posición */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Distancia desde arriba */
+    z-index: 1000; /* Para que esté encima de otros elementos */
+    border-radius: 30px;
+    margin: 0;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 3px; /* Eliminar el margen superior del h1 */
+}
+
+
+
+.sidebar {
+    width: 200px; /* Ancho de la barra lateral */
+    height: 100%; /* Altura total */
+    background-color: #4cdb09; /* Color de fondo */
+    position: fixed; /* Fijar la barra lateral */
+    margin-top: 80px; /* Margen superior para ubicarlo debajo del encabezado */
+    top: 0;
+    left: 0;
+    padding: 30px; /* Espaciado interior */
+    overflow-y: auto; /* Desplazamiento vertical */
+    border-radius: 40px;
+    border: 1px solid #ccc; /* Borde para visualización */
+    text-align: center; /* Centrar el texto */
+}
+ 
+
+.modulo {
+    display: block; /* Convertir en bloque para que el enlace ocupe todo el ancho */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: #333; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 10px; /* Espacio entre módulos */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.modulo:hover {
+    background-color: #ddd; /* Cambiar color de fondo al pasar el cursor */
+}
+
+.modulo {
+    background-color: #bdf0e4; /* Color de fondo del módulo */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border-radius: 30px;
+}
+
+.modulo h2 {
+    margin-top: 0;
+    border-radius: 30px;
+}
+
+/* Estilos para los links si los hay */
+.modulo a {
+    color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.modulo a:hover {
+    text-decoration: underline;
+    border-radius: 30px;
+}
+
+.footer {
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 50px;
+    background-color: #d0701c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 0; 
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;

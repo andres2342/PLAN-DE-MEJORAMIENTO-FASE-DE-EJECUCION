@@ -1,0 +1,62 @@
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para las categorías */
+.categoria {
+    margin-bottom: 40px; /* Espacio entre cada categoría */
+}
+
+/* Estilos para los productos */
+.producto {
+    background-color: #69acc3;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Espacio entre cada producto */
+}
+
+/* Estilos para las imágenes de los productos */
+.producto img {
+    max-width: 100%; /* La imagen ocupa el ancho máximo del contenedor */
+    height: auto; /* Se ajusta la altura automáticamente */
+    display: block; /* Elimina el espacio debajo de la imagen */
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para los títulos de los productos */
+.producto h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para los precios de los productos */
+.producto p {
+    margin: 5px 0;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
